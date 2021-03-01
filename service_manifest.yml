@@ -1,0 +1,33 @@
+name: UrlScanIo
+version: $SERVICE_TAG
+description: Submit the URL to urlscan.io and fetch the results
+
+accepts: code/html
+rejects: empty|metadata/.*
+
+stage: CORE
+category: Static Analysis
+
+file_required: true
+timeout: 120
+disable_cache: false
+
+enabled: false
+is_external: true
+licence_count: 0
+
+submission_params:
+  - default: ""
+    name: api_key
+    type: str
+    value: ""
+  - default: false
+    name: public
+    type: bool
+    value: false
+
+docker_config:
+  image: x1mus/assemblyline-service-urlscanio:$SERVICE_TAG
+  cpu_cores: 1
+  ram_mb: 256
+  allow_internet_access: true
