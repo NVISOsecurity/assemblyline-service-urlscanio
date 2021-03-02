@@ -8,5 +8,5 @@ Here's the steps to be able to use this service :
 sudo docker exec -it full_appliance_al_ui_1 /bin/bash
 sed -i 's/("name", None)/("url", None)/g' /var/lib/assemblyline/.local/lib/python3.7/site-packages/assemblyline_ui/api/v4/submit.py
 exit
-sudo docker restart full_appliance_al_ui_1 /bin/bash
+sudo docker restart full_appliance_al_ui_1
 ```
