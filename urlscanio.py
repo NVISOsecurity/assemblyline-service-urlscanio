@@ -34,7 +34,7 @@ class UrlScanIo(ServiceBase):
 
 	def execute(self, request):
 		result = Result()
-		url = request.file_name
+		url = request.task.metadata.get('submitted_url')
 		api_key = request.get_param("api_key")
 		public = request.get_param("public")
 
