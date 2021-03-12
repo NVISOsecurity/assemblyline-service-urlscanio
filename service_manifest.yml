@@ -2,7 +2,7 @@ name: UrlScanIo
 version: $SERVICE_TAG
 description: Submit the URL to urlscan.io and fetch the results
 
-accepts: code/html
+accepts: code/(html|hta)
 rejects: empty|metadata/.*
 
 stage: CORE
