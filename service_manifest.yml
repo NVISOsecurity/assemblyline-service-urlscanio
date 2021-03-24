@@ -6,7 +6,7 @@ accepts: code/(html|hta)
 rejects: empty|metadata/.*
 
 stage: CORE
-category: Static Analysis
+category: External
 
 file_required: true
 timeout: 120
