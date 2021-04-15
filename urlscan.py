@@ -21,7 +21,6 @@ class UrlScan():
 
 		if s.status_code == 200:
 			self.scanid = json.loads(s.text)['uuid']
-			print(self.scanid)
 		else:
 			s.raise_for_status()
 
