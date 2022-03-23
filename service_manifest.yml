@@ -1,5 +1,5 @@
 name: UrlScanIo
-version: $SERVICE_TAG
+version: 4.2.0.stable1
 description: Submit the URL to urlscan.io and fetch the results
 
 accepts: code/(html|hta)
@@ -27,7 +27,7 @@ submission_params:
     value: false
 
 docker_config:
-  image: ghcr.io/nvisosecurity/assemblyline-service-urlscanio:$SERVICE_TAG
+  image: ghcr.io/nvisosecurity/assemblyline-service-urlscanio:main
   cpu_cores: 1
   ram_mb: 256
   allow_internet_access: true
